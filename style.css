@@ -1,9 +1,11 @@
+* {
+    font-family: "Times New Roman", Times, serif !important;
+}
 body {
     color: #333;
     background-color: #f0f8ff; /* Light blue background */
     margin: 20px;
     padding: 0;
-    font: medium verdana, arial, helvetica, sans-serif;
 }
 
 h1 {
@@ -16,13 +18,16 @@ h1 {
 }
 
 h2 {
-    font: bold 18px/24px verdana, arial, helvetica, sans-serif;
+    font:
+        bold 18px/24px verdana,
+        arial,
+        helvetica,
+        sans-serif;
     color: #0077cc; /* Bright blue color */
     margin-bottom: 1em;
 }
 
 p {
-    font: medium verdana, arial, helvetica, sans-serif;
     margin: 0 0 16px 0;
     padding: 0;
 }
@@ -30,7 +35,6 @@ p {
 a {
     color: #0077cc; /* Bright blue color */
     font-size: medium;
-    font-family: verdana, arial, helvetica, sans-serif;
     font-weight: 600;
     text-decoration: none;
     transition: color 0.3s; /* Smooth transition for hover effect */
@@ -69,7 +73,12 @@ a:hover {
 .nav {
     width: 200px; /* Fixed width for nav */
     margin: 20px; /* Margin around nav */
-    background: rgba(255, 255, 255, 0.5); /* Semi-transparent white for glass effect */
+    background: rgba(
+        255,
+        255,
+        255,
+        0.5
+    ); /* Semi-transparent white for glass effect */
     border-radius: 12px; /* Rounded corners */
     backdrop-filter: blur(10px); /* Blur background for glass effect */
     border: 1px solid rgba(255, 255, 255, 0.2); /* Light border with transparency */
@@ -98,7 +107,12 @@ a:hover {
 }
 
 .nav a:hover {
-    background-color: rgba(0, 119, 204, 0.3); /* Light blue background on hover */
+    background-color: rgba(
+        0,
+        119,
+        204,
+        0.3
+    ); /* Light blue background on hover */
 }
 
 /* Header styles */
@@ -128,7 +142,6 @@ a:hover {
     margin-top: 8px;
 }
 
-
 .profile-card {
     width: 220px; /* Adjust width as needed */
     margin: 20px auto;
@@ -139,7 +152,6 @@ a:hover {
     border: 1px solid rgba(255, 255, 255, 0.3); /* Light border for glass effect */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
     text-align: center;
-    font-family: verdana, arial, sans-serif;
 }
 
 .profile-card .profile-img {
@@ -176,7 +188,6 @@ a:hover {
 .profile-card .contact-info a:hover {
     color: #ff4500; /* Color change on hover */
 }
-
 
 /* Media Queries for Responsive Design */
 @media (max-width: 768px) {
