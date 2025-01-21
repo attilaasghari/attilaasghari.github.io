@@ -8,17 +8,21 @@ redirect_from:
   - /about.html
 ---
 
-welcome to my personal website
+Here's a draft for your "About Me" section:  
 
 ---
-[view all blog posts](/year-archive/)
 
-{% capture written_year %}'None'{% endcapture %}
-{% for post in site.posts limit:3 %}
-  {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
-  {% if year != written_year %}
-    
-    {% capture written_year %}{{ year }}{% endcapture %}
-  {% endif %}
-  {% include archive-single.html %}
-{% endfor %}
+## About Me  
+
+I am a final-year Computer Engineering student passionate about the intersection of technology and innovation. My primary areas of interest include Machine Learning (ML), Artificial Intelligence (AI), Big Data, and Embedded Systems.  
+
+Currently, I am actively learning and exploring the fields of ML/AI and Data Science, equipping myself with the tools and techniques to tackle real-world challenges. With a strong foundation in computer engineering and a curiosity-driven mindset, I aim to contribute to cutting-edge research and transformative technological advancements.  
+
+In addition to my academic pursuits, I am enthusiastic about hands-on projects that bridge theory and practice, particularly in developing intelligent systems and harnessing the power of data for impactful insights.  
+
+Looking ahead, I aspire to further my expertise through advanced studies and make meaningful contributions to the ever-evolving field of technology.  
+
+---  
+
+Let me know if you'd like any adjustments or have specific achievements you'd like to include!
+
