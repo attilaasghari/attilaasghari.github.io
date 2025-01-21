@@ -1,18 +1,12 @@
 ---
 permalink: /
-title: "About"
+title: "About Me"
 author_profile: true
 authors: "Attila Asghari"
 redirect_from: 
   - /about/
   - /about.html
----
 
-Here's a draft for your "About Me" section:  
-
----
-
-## About Me  
 
 I am a final-year Computer Engineering student passionate about the intersection of technology and innovation. My primary areas of interest include Machine Learning (ML), Artificial Intelligence (AI), Big Data, and Embedded Systems.  
 
