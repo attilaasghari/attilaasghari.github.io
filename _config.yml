@@ -83,6 +83,22 @@ publication_category:
   conferences:
     title: 'Conference Papers'
 
+document_category:
+  tutorials:
+    title: "Tutorials"
+  guides:
+    title: "Guides"
+  advanced:
+    title: "Advanced Topics"
+
+project_category:
+  web_development:
+    title: "Web Development"
+  data_science:
+    title: "Data Science"
+  desktop:
+    title: "desktop"
+
 # Site Settings
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 breadcrumbs              : false # true, false (default)
@@ -215,6 +231,9 @@ collections:
   teaching:
     output: true
     permalink: /:collection/:path/
+  documents:
+    output: true
+    permalink: /documents/:path/
   publications:
     output: true
     permalink: /:collection/:path/
@@ -224,6 +243,11 @@ collections:
   talks:
     output: true
     permalink: /:collection/:path/
+  projects:
+    output: true
+    permalink: /projects/:path/
+
+
 
 
 # These settings control how pages and collections are included in the site
@@ -281,7 +305,15 @@ defaults:
       layout: talk
       author_profile: true
       share: true
-
+  # _documents
+  - scope:
+      path: ""
+      type: documents
+    values:
+      layout: single
+      author_profile: true
+      share: true
+      comments: false
 
 # Sass/SCSS
 sass:

@@ -5,14 +5,20 @@
 # prevent it from being included in the site.
 
 main:
-  - title: "Publications"
-    url: /publications/
 
-  - title: "Talks"
-    url: /talks/    
+  - title: "Documents"
+    url: /documents/
 
-  - title: "Teaching"
-    url: /teaching/    
+  # - title: "Publications"
+  #   url: /publications/
+
+  # - title: "Talks"
+  #   url: /talks/    
+
+  # - title: "Teaching"
+  #   url: /teaching/ 
+  - title: "Projects" 
+    url: /projects/ 
     
   - title: "Portfolio"
     url: /portfolio/
@@ -22,6 +28,7 @@ main:
     
   - title: "CV"
     url: /cv/
+
     
-  - title: "Guide"
-    url: /markdown/
+  # - title: "Guide"
+  #   url: /markdown/
