@@ -102,6 +102,8 @@ project_category:
     title: "desktop"
   operating_systems:
     title: "Operating Systems"
+  data_structures:
+    title: "Data Structures"
 
 # Site Settings
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
