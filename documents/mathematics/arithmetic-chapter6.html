@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chapter 6: Applications in Daily Math</title>
+  <link rel="stylesheet" href="styles.css" />
+  <!-- MathJax Configuration -->
+  <script>
+
+  </script>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <script src="include.js" defer></script>
+</head>
+<body>
+  <main>
+    <h2>Chapter 6: Applications in Daily Math</h2>
+
+    <blockquote>
+      <p>“The purpose of computing is insight, not numbers.”</p>
+      <cite>— Richard Hamming</cite>
+    </blockquote>
+
+    <p>Mathematics isn’t just about symbols on a page—it’s a lens for understanding your world. In this chapter, we explore four essential areas that appear in personal finance, news reports, shopping, and everyday reasoning: <strong>interest</strong>, <strong>basic statistics</strong>, <strong>inequalities</strong>, and <strong>word problem strategies</strong>. These are the skills that help you <em>think clearly</em> and <em>act wisely</em>.</p>
+
+    <hr />
+
+    <section>
+      <h3>6.1 Interest: Simple and Compound</h3>
+
+      <p>When you save money or borrow it, <strong>interest</strong> is the cost (or reward) of using that money over time.</p>
+
+      <h4>Simple Interest</h4>
+      <p>Simple interest is calculated <strong>only on the original amount</strong> (the <strong>principal</strong>).</p>
+
+      <p><strong>Formula</strong>:</p>
+      \[
+      I = P \cdot r \cdot t
+      \]
+      <ul>
+        <li>\(I\) = interest earned or paid</li>
+        <li>\(P\) = principal (initial amount)</li>
+        <li>\(r\) = annual interest rate (as a <strong>decimal</strong>)</li>
+        <li>\(t\) = time in <strong>years</strong></li>
+      </ul>
+
+      <p><strong>Example</strong>:<br />
+      You deposit \$1,200 in a savings account at 3% simple interest for 4 years.</p>
+      \[
+      I = 1200 \cdot 0.03 \cdot 4 = 144
+      \]
+      <p>Total amount = \(1200 + 144 = \$1,344\)</p>
+
+      <p>✅ Simple interest is common in short-term loans or basic savings accounts.</p>
+
+      <h4>Compound Interest (Introduction)</h4>
+      <p>Compound interest is calculated on the <strong>principal plus any previously earned interest</strong>—so your money “grows faster.”</p>
+
+      <p><strong>Basic idea</strong>:</p>
+      <ul>
+        <li>Year 1: Interest on \$1,000</li>
+        <li>Year 2: Interest on \$1,000 + Year 1 interest</li>
+        <li>And so on…</li>
+      </ul>
+
+      <p><strong>Formula (annual compounding)</strong>:</p>
+      \[
+      A = P(1 + r)^t
+      \]
+      <ul>
+        <li>\(A\) = total amount after \(t\) years</li>
+      </ul>
+
+      <p><strong>Example</strong>:<br />
+      \$1,000 at 5% compounded annually for 3 years:</p>
+      \[
+      A = 1000(1 + 0.05)^3 = 1000(1.157625) = \$1,157.63
+      \]
+
+      <blockquote class="insight">
+        <p><strong>Why it matters</strong>:<br />
+        Over time, compound interest can dramatically outpace simple interest—this is the power behind long-term investing (and the danger of high-interest debt).</p>
+      </blockquote>
+
+      <blockquote class="insight">
+        <p><strong>Rule of Thumb</strong>:<br />
+        “Compound interest is the eighth wonder of the world. He who understands it, earns it… he who doesn’t, pays it.” — often attributed to Einstein</p>
+      </blockquote>
+    </section>
+
+    <section>
+      <h3>6.2 Basic Statistics: Mean, Median, Mode, Range</h3>
+
+      <p>When you see “average salary” or “typical temperature,” you’re encountering <strong>descriptive statistics</strong>—ways to summarize data.</p>
+
+      <p>Given a data set:<br />
+      \[
+      5,\ 7,\ 7,\ 8,\ 10,\ 12,\ 15
+      \]</p>
+
+      <h4>Mean (Average)</h4>
+      <p>Add all values, divide by how many:</p>
+      \[
+      \text{Mean} = \frac{5 + 7 + 7 + 8 + 10 + 12 + 15}{7} = \frac{64}{7} \approx 9.14
+      \]
+
+      <h4>Median (Middle Value)</h4>
+      <p>Order the data; pick the center number.</p>
+      <ul>
+        <li>Odd count: middle value → <strong>8</strong></li>
+        <li>Even count: average of two middle values</li>
+      </ul>
+
+      <h4>Mode (Most Frequent)</h4>
+      <p>The value that appears most often → <strong>7</strong></p>
+
+      <h4>Range (Spread)</h4>
+      <p>Difference between max and min:</p>
+      \[
+      15 - 5 = 10
+      \]
+
+      <blockquote class="insight">
+        <p><strong>Practical Insight</strong>:<br />
+        – <strong>Mean</strong> is sensitive to outliers (e.g., one billionaire skews “average income”).<br />
+        – <strong>Median</strong> better represents “typical” in skewed data (e.g., house prices).<br />
+        – <strong>Mode</strong> is useful for categories (e.g., most common shoe size).</p>
+      </blockquote>
+    </section>
+
+    <section>
+      <h3>6.3 Inequalities: Understanding >, <, ≥, ≤</h3>
+
+      <p>Not all comparisons are equal—and that’s where <strong>inequalities</strong> come in.</p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Symbol</th>
+            <th>Meaning</th>
+            <th>Example</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><</td>
+            <td>Less than</td>
+            <td>\(3 < 5\)</td>
+          </tr>
+          <tr>
+            <td>></td>
+            <td>Greater than</td>
+            <td>\(10 > 2\)</td>
+          </tr>
+          <tr>
+            <td>≤</td>
+            <td>Less than or equal</td>
+            <td>“You must be ≤ 12 to order the kids’ meal”</td>
+          </tr>
+          <tr>
+            <td>≥</td>
+            <td>Greater than or equal</td>
+            <td>“Score ≥ 70 to pass”</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h4>Key Ideas</h4>
+      <ul>
+        <li>On a number line, <strong><</strong> and <strong>≤</strong> point <strong>left</strong>; <strong>></strong> and <strong>≥</strong> point <strong>right</strong>.</li>
+        <li>When you <strong>multiply or divide both sides by a negative number</strong>, <strong>flip the inequality sign</strong>.</li>
+      </ul>
+
+      <p><strong>Example</strong>:</p>
+      \[
+      -2x > 6 \quad \Rightarrow \quad x < -3 \quad \text{(sign flipped!)}
+      \]
+
+      <blockquote class="insight">
+        <p><strong>Real-world use</strong>:<br />
+        Budgeting: “I can spend <strong>≤ \$50</strong> on groceries.”<br />
+        Age restrictions: “Ride requires height <strong>≥ 48 inches</strong>.”</p>
+      </blockquote>
+    </section>
+
+    <section>
+      <h3>6.4 Word Problems and Practical Reasoning</h3>
+
+      <p>Word problems aren’t puzzles—they’re <strong>translations</strong> of real situations into math.</p>
+
+      <h4>A 4-Step Strategy</h4>
+      <ol>
+        <li><strong>Understand</strong>: What is being asked? What information is given?</li>
+        <li><strong>Plan</strong>: What operation, formula, or relationship applies?</li>
+        <li><strong>Solve</strong>: Do the math carefully. Track units.</li>
+        <li><strong>Check</strong>: Does the answer make sense? Is it reasonable?</li>
+      </ol>
+
+      <h4>Example Problem</h4>
+      <blockquote>
+        <p>Maria earns \$12.50/hour. She works 35 hours this week and pays 15% in taxes. How much does she take home?</p>
+      </blockquote>
+
+      <ul>
+        <li><strong>Step 1</strong>: Find gross pay → \(12.50 \times 35 = 437.50\)</li>
+        <li><strong>Step 2</strong>: Find tax → \(0.15 \times 437.50 = 65.625\)</li>
+        <li><strong>Step 3</strong>: Net pay → \(437.50 - 65.63 = 371.87\)</li>
+        <li><strong>Step 4</strong>: Check: ~\$372 for 35 hours → ~\$10.60/hour after tax → reasonable.</li>
+      </ul>
+
+      <blockquote class="insight">
+        <p><strong>Pro Tip</strong>:<br />
+        Underline key numbers and phrases: “15% <strong>of</strong>,” “<strong>total</strong> cost,” “<strong>per</strong> mile,” “<strong>at least</strong>.”</p>
+      </blockquote>
+
+      <h4>Common Word Problem Types</h4>
+      <ul>
+        <li><strong>Money</strong>: discounts, tax, tips, wages</li>
+        <li><strong>Time &amp; Rate</strong>: distance = rate × time</li>
+        <li><strong>Mixtures</strong>: combining solutions or ingredients</li>
+        <li><strong>Comparison</strong>: “twice as many,” “5 more than”</li>
+      </ul>
+
+      <blockquote class="insight">
+        <p><strong>Mindset</strong>:<br />
+        Every word problem is a story. Your job is to find the math hidden inside it.</p>
+      </blockquote>
+    </section>
+
+    <section>
+      <h3>Chapter Summary</h3>
+      <ul>
+        <li><strong>Interest</strong>: Simple = linear growth; Compound = exponential growth (powerful over time).</li>
+        <li><strong>Statistics</strong>: Mean, median, mode, and range help summarize and interpret data.</li>
+        <li><strong>Inequalities</strong>: Express limits, requirements, and comparisons—watch the sign when multiplying by negatives!</li>
+        <li><strong>Word Problems</strong>: Use a structured approach—understand, plan, solve, check.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h3>Practice Problems</h3>
+      <ol>
+        <li>You borrow \$800 at 4% simple interest for 3 years. How much interest will you pay?</li>
+        <li>Find the mean, median, mode, and range of: 6, 9, 3, 9, 12, 6, 9</li>
+        <li>Solve: \(-3x + 5 \geq 14\)</li>
+        <li>A phone plan costs \$40/month plus \$0.10 per text. You send 120 texts. Total bill?</li>
+        <li>You invest \$2,000 at 6% compounded annually. How much after 2 years?</li>
+        <li>A student scored 85, 90, 78, and 92 on four tests. What score is needed on the fifth to have an average of 88?</li>
+        <li>“You must be at least 16 to get a driver’s permit.” Write this as an inequality.</li>
+      </ol>
+      <p><em>(Full solutions with explanations will be provided at the end of the Arithmetic unit.)</em></p>
+    </section>
+  </main>
+  <div data-include="footer.html"></div>
+</body>
+</html>

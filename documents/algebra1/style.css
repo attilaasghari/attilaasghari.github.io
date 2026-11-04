@@ -1,0 +1,217 @@
+/* ========== BASE STYLES ========== */
+body {
+    font-family: "Times New Roman", serif;
+    font-size: 12pt;
+    line-height: 1.5;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+    hyphens: auto;
+}
+
+/* ========== TITLE PAGE ========== */
+.title-page {
+    text-align: center;
+    page-break-after: always;
+    padding-top: 2in;
+}
+
+.book-title {
+    font-size: 36pt;
+    margin: 20px 0;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.book-author {
+    font-size: 24pt;
+    margin: 15px 0;
+    color: #444;
+}
+
+.publication-details {
+    margin-top: 1in;
+    font-size: 14pt;
+}
+
+/* ========== HEADINGS ========== */
+h1 {
+    font-size: 24pt;
+    margin: 24px 0;
+    page-break-after: avoid;
+}
+
+h2 {
+    font-size: 20pt;
+    font-weight: bold;
+    margin: 24px 0 12px 0;
+    padding-bottom: 6px;
+    border-bottom: 2px solid #ccc;
+    page-break-after: avoid;
+}
+
+h3 {
+    font-size: 16pt;
+    font-weight: bold;
+    margin: 18px 0 9px 0;
+    page-break-after: avoid;
+}
+
+/* ========== CONTENT STRUCTURE ========== */
+.contents {
+    page-break-after: always;
+}
+
+.contents-title {
+    font-size: 24pt;
+    text-align: center;
+    margin: 40px 0;
+    border-bottom: 3px double #333;
+    padding-bottom: 15px;
+}
+
+.contents-list {
+    font-size: 14pt;
+    margin: 0 auto;
+    width: 70%;
+    counter-reset: chapter;
+}
+
+.contents-list li {
+    margin: 15px 0;
+    padding-left: 30px;
+    position: relative;
+    page-break-inside: avoid;
+}
+
+.contents-list li:before {
+    content: counter(chapter) ".";
+    counter-increment: chapter;
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+}
+
+/* ========== TEXT ELEMENTS ========== */
+p {
+    margin: 0 0 12px 0;
+    text-align: justify;
+}
+
+em {
+    font-style: italic;
+}
+
+strong {
+    font-weight: bold;
+}
+
+blockquote {
+    margin: 15px 30px;
+    padding: 10px 20px;
+    border-left: 4px solid #ccc;
+    color: #666;
+}
+
+/* ========== LISTS ========== */
+ul, ol {
+    margin: 12px 0;
+    padding-left: 40px;
+}
+
+li {
+    margin: 6px 0;
+    page-break-inside: avoid;
+}
+
+/* ========== MATH CONTENT ========== */
+.MathJax {
+    font-size: 1.1em !important;
+}
+
+mjx-container {
+    overflow-x: auto;
+    overflow-y: hidden;
+    margin: 4px 0;
+}
+
+/* ========== SPECIAL SECTIONS ========== */
+.preface {
+    margin: 40px 0;
+}
+
+.callout-box {
+    border-left: 4px solid #0066cc;
+    padding-left: 20px;
+    margin: 20px 0;
+    font-style: italic;
+}
+
+.emphasis-note {
+    font-weight: bold;
+    color: #0066cc;
+    margin-top: 15px;
+    text-align: center;
+}
+
+/* ========== VISUAL ELEMENTS ========== */
+hr {
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 24px 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    margin: 12px auto;
+    display: block;
+}
+
+/* ========== PRINT STYLES ========== */
+@media print {
+    body {
+        padding: 0.5in;
+    }
+    
+    .title-page {
+        padding-top: 3in;
+    }
+    
+    h2 {
+        page-break-before: always;
+    }
+    
+    img {
+        max-width: 90% !important;
+    }
+    
+    script, link, meta, title {
+        display: none !important;
+    }
+    
+    .chapter, .example {
+        page-break-inside: avoid;
+    }
+    
+    ul, ol {
+        page-break-inside: avoid;
+    }
+    
+    .contents-list {
+        width: 80%;
+    }
+    
+    .callout-box {
+        border-width: 3px;
+    }
+}
+
+@page {
+    size: A4;
+    margin: 1in;
+    @top-right {
+        content: counter(page);
+        font-size: 10pt;
+    }
+}

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chapter 2: Introduction to Algebraic Thinking</title>
+  <link rel="stylesheet" href="styles.css" />
+  <!-- MathJax Configuration -->
+  <script>
+
+  </script>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <script src="include.js" defer></script>
+</head>
+<body>
+  <main>
+    <h2>Chapter 2: Introduction to Algebraic Thinking</h2>
+
+    <blockquote>
+      <p>“Algebra is the language through which we describe patterns.”</p>
+      <cite>— Professor’s Guiding Principle</cite>
+    </blockquote>
+
+    <p>Up to now, mathematics has been about <strong>known quantities</strong>: 5 apples, 12 miles, –3°C. But life is full of <strong>unknowns</strong>: “How many hours must I work to earn $200?” “What speed gets me there in time?” Algebra gives us tools to <strong>name the unknown</strong>, <strong>describe relationships</strong>, and <strong>solve for what’s missing</strong>.</p>
+
+    <p>This chapter introduces the building blocks: <strong>variables</strong>, <strong>expressions</strong>, and the properties that let us manipulate them wisely.</p>
+
+    <hr />
+
+    <section>
+      <h3>2.1 Variables and Constants</h3>
+
+      <ul>
+        <li><strong>Constant</strong>: A fixed number.<br />
+          Examples: \( 7,\ -3.2,\ \frac{1}{2},\ \pi \)</li>
+        <li><strong>Variable</strong>: A symbol (usually a letter) that <strong>represents one or more numbers</strong>.<br />
+          Examples: \( x,\ y,\ t,\ n \)</li>
+      </ul>
+
+      <blockquote class="insight">
+        <p><strong>Why use variables?</strong><br />
+        Instead of solving “5 + ___ = 12” over and over, we write:<br />
+        \[
+        5 + x = 12
+        \]<br />
+        Now we have a <strong>general tool</strong>—not just one answer, but a method.</p>
+      </blockquote>
+
+      <p><strong>Real-world context</strong>:</p>
+      <ul>
+        <li>\( t \) = time in hours</li>
+        <li>\( C \) = cost in dollars</li>
+        <li>\( n \) = number of students</li>
+      </ul>
+
+      <blockquote class="insight">
+        <p><strong>Note</strong>:<br />
+        A variable isn’t “unknown” because it’s mysterious—it’s a <strong>placeholder</strong> for values that may change or be determined later.</p>
+      </blockquote>
+    </section>
+
+    <section>
+      <h3>2.2 Algebraic Expressions and Terms</h3>
+
+      <p>An <strong>algebraic expression</strong> combines numbers, variables, and operations—<strong>without an equals sign</strong>.</p>
+
+      <p><strong>Examples</strong>:</p>
+      <ul>
+        <li>\( 3x + 7 \)</li>
+        <li>\( 2a - 5b + 1 \)</li>
+        <li>\( \frac{y}{4} - 9 \)</li>
+      </ul>
+
+      <h4>Parts of an Expression</h4>
+      <ul>
+        <li><strong>Term</strong>: A single number, variable, or product/quotient of numbers and variables.<br />
+          In \( 4x - 7 + 2y \), the terms are: \( 4x,\ -7,\ 2y \)</li>
+        <li><strong>Coefficient</strong>: The numerical part of a term that includes a variable.<br />
+          In \( 4x \), the coefficient is <strong>4</strong>.<br />
+          In \( -x \), the coefficient is <strong>–1</strong> (since \( -x = -1 \cdot x \)).</li>
+        <li><strong>Constant term</strong>: A term with no variable (just a number).<br />
+          In \( 3x + 8 \), the constant term is <strong>8</strong>.</li>
+      </ul>
+
+      <blockquote class="insight">
+        <p><strong>Key distinction</strong>:<br />
+        – <strong>Expression</strong>: \( 2x + 5 \) → no solution, just a recipe<br />
+        – <strong>Equation</strong>: \( 2x + 5 = 13 \) → can be solved</p>
+      </blockquote>
+    </section>
+
+    <section>
+      <h3>2.3 Evaluating Expressions</h3>
+
+      <p>To <strong>evaluate</strong> an expression means to <strong>substitute a value for each variable and simplify</strong> using order of operations.</p>
+
+      <p><strong>Example 1</strong>: Evaluate \( 4x - 3 \) when \( x = 5 \)</p>
+      \[
+      4(5) - 3 = 20 - 3 = 17
+      \]
+
+      <p><strong>Example 2</strong>: Evaluate \( 2a + 3b \) when \( a = -2,\ b = 4 \)</p>
+      \[
+      2(-2) + 3(4) = -4 + 12 = 8
+      \]
+
+      <p><strong>Example 3 (with fractions)</strong>: Evaluate \( \frac{m}{2} + n \) when \( m = -6,\ n = \frac{1}{2} \)</p>
+      \[
+      \frac{-6}{2} + \frac{1}{2} = -3 + 0.5 = -2.5 \quad \text{or} \quad -\frac{5}{2}
+      \]
+
+      <blockquote class="insight">
+        <p><strong>Practical use</strong>:<br />
+        A phone plan costs \( C = 20 + 0.10t \), where \( t \) = minutes over 500.<br />
+        If you use 620 minutes, \( t = 120 \):<br />
+        \( C = 20 + 0.10(120) = 20 + 12 = \$32 \)</p>
+      </blockquote>
+    </section>
+
+    <section>
+      <h3>2.4 Simplifying Expressions Using Properties</h3>
+
+      <p>We simplify expressions to make them <strong>easier to evaluate, compare, or solve</strong>. We use the same properties from arithmetic—but now with variables.</p>
+
+      <h4>1. Commutative Property</h4>
+      <ul>
+        <li>Addition: \( a + b = b + a \) → \( x + 5 = 5 + x \)</li>
+        <li>Multiplication: \( ab = ba \) → \( 3x = x \cdot 3 \)</li>
+      </ul>
+
+      <h4>2. Associative Property</h4>
+      <ul>
+        <li>\( (a + b) + c = a + (b + c) \) → \( (x + 2) + 3 = x + (2 + 3) = x + 5 \)</li>
+        <li>\( (ab)c = a(bc) \)</li>
+      </ul>
+
+      <h4>3. Distributive Property → <strong>Most Important for Algebra!</strong></h4>
+      \[
+      a(b + c) = ab + ac
+      \]
+
+      <p><strong>Example</strong>:</p>
+      \[
+      3(x + 4) = 3x + 12
+      \]
+
+      <p><strong>With negatives</strong>:</p>
+      \[
+      -2(5 - y) = -2 \cdot 5 + (-2) \cdot (-y) = -10 + 2y
+      \]
+
+      <blockquote class="caution">
+        <p><strong>Watch signs carefully!</strong><br />
+        \( - (x + 7) = -x - 7 \) (because it’s \( -1 \cdot (x + 7) \))</p>
+      </blockquote>
+
+      <h4>Combining Like Terms</h4>
+      <p><strong>Like terms</strong> have the <strong>same variable(s) raised to the same power</strong>.</p>
+      <ul>
+        <li>Like: \( 3x \) and \( -5x \) → combine to \( -2x \)</li>
+        <li>Not like: \( 3x \) and \( 3x^2 \) → <strong>cannot combine</strong></li>
+      </ul>
+
+      <p><strong>Example</strong>: Simplify \( 4x + 7 - 2x + 2 \)</p>
+      <ol>
+        <li>Group like terms: \( (4x - 2x) + (7 + 2) \)</li>
+        <li>Simplify: \( 2x + 9 \)</li>
+      </ol>
+
+      <p><strong>Another example</strong>:</p>
+      \[
+      5a - 2b + 3a + b = (5a + 3a) + (-2b + b) = 8a - b
+      \]
+
+      <blockquote class="insight">
+        <p><strong>Why simplify?</strong><br />
+        Simplified expressions are easier to evaluate, graph, and solve.<br />
+        They reveal the <strong>essential structure</strong> of a relationship.</p>
+      </blockquote>
+    </section>
+
+    <section>
+      <h3>Chapter Summary</h3>
+      <ul>
+        <li><strong>Variables</strong> stand for unknown or changing quantities; <strong>constants</strong> are fixed.</li>
+        <li>An <strong>algebraic expression</strong> is a combination of terms involving variables and operations.</li>
+        <li>To <strong>evaluate</strong>, substitute values and follow order of operations.</li>
+        <li>Use <strong>commutative, associative, and especially distributive properties</strong> to <strong>simplify</strong> by combining <strong>like terms</strong>.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h3>Practice Problems</h3>
+      <ol>
+        <li>Identify the variable(s), constant(s), and coefficients in: \( 7y - 4 + 2x \)</li>
+        <li>Evaluate \( 5a - 2b \) when \( a = 3,\ b = -1 \)</li>
+        <li>Simplify: \( 6x + 9 - 3x + 2 \)</li>
+        <li>Use the distributive property: \( -4(2x - 5) \)</li>
+        <li>Simplify: \( 3m - (m + 4) \)</li>
+        <li>Are \( 2x^2 \) and \( 2x \) like terms? Explain.</li>
+        <li>The cost of printing \( n \) posters is \( C = 25 + 1.20n \). What is the cost for 50 posters?</li>
+      </ol>
+      <p><em>(Solutions with step-by-step reasoning will appear at the end of the Pre-Algebra unit.)</em></p>
+    </section>
+  </main>
+  <div data-include="footer.html"></div>
+</body>
+</html>

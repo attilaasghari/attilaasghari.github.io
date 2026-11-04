@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chapter 7: Geometry in Arithmetic</title>
+  <link rel="stylesheet" href="styles.css" />
+  <!-- MathJax Configuration -->
+  <script>
+  </script>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <script src="include.js" defer></script>
+</head>
+<body>
+  <main>
+    <h2>Chapter 7: Geometry in Arithmetic</h2>
+
+    <blockquote>
+      <p>“Geometry is the art of reasoning well from badly drawn figures.”</p>
+      <cite>— Henri Poincaré<br /><em>(But with good arithmetic, your reasoning will be excellent.)</em></cite>
+    </blockquote>
+
+    <p>You don’t need advanced math to measure a room, compare pizza sizes, or estimate how much paint to buy. This chapter shows how <strong>arithmetic powers geometry</strong>—turning shapes into numbers you can add, multiply, and compare. We’ll focus on <strong>perimeter, area, and volume</strong> of common figures, using the operations, fractions, decimals, and ratios you already know.</p>
+
+    <hr />
+
+    <section>
+      <h3>7.1 Basic Geometric Shapes and Terms</h3>
+
+      <p>Before we calculate, let’s speak the language of space.</p>
+
+      <ul>
+        <li><strong>Point</strong>: A location (no size).</li>
+        <li><strong>Line</strong>: Straight, infinitely long, no thickness.</li>
+        <li><strong>Line segment</strong>: Part of a line with two endpoints.</li>
+        <li><strong>Angle</strong>: Formed by two rays sharing a vertex. Measured in <strong>degrees (°)</strong>.
+          <ul>
+            <li>Right angle = 90°</li>
+            <li>Straight angle = 180°</li>
+            <li>Acute < 90°, Obtuse > 90°</li>
+          </ul>
+        </li>
+        <li><strong>Perimeter</strong>: Total distance <strong>around</strong> a 2D shape.</li>
+        <li><strong>Area</strong>: Amount of <strong>surface</strong> inside a 2D shape (measured in square units: cm², ft², etc.).</li>
+        <li><strong>Volume</strong>: Amount of <strong>space</strong> inside a 3D object (measured in cubic units: m³, in³, etc.).</li>
+      </ul>
+
+      <blockquote class="insight">
+        <p><strong>Key Insight</strong>:<br />
+        Perimeter → <strong>adding lengths</strong><br />
+        Area → <strong>multiplying lengths</strong><br />
+        Volume → <strong>multiplying three lengths</strong></p>
+      </blockquote>
+    </section>
+
+    <section>
+      <h3>7.2 Using Arithmetic in Geometry</h3>
+
+      <p>Now, let’s compute using formulas—all built from basic arithmetic.</p>
+
+      <h4>Rectangle</h4>
+      <ul>
+        <li>Perimeter: \( P = 2 \times (\text{length} + \text{width}) \)</li>
+        <li>Area: \( A = \text{length} \times \text{width} \)</li>
+      </ul>
+
+      <p><strong>Example</strong>: A garden is 12.5 ft by 8 ft.</p>
+      <ul>
+        <li>Perimeter: \(2 \times (12.5 + 8) = 2 \times 20.5 = 41\) ft</li>
+        <li>Area: \(12.5 \times 8 = 100\) ft²</li>
+      </ul>
+
+      <h4>Triangle</h4>
+      <ul>
+        <li>Area: \( A = \frac{1}{2} \times \text{base} \times \text{height} \)</li>
+      </ul>
+
+      <p><strong>Why \(\frac{1}{2}\)?</strong> A triangle is half of a rectangle with the same base and height.</p>
+
+      <p><strong>Example</strong>: Base = 10 cm, height = 6 cm</p>
+      \[
+      A = \frac{1}{2} \times 10 \times 6 = 30\ \text{cm}^2
+      \]
+
+      <h4>Circle</h4>
+      <ul>
+        <li>Radius (\(r\)): distance from center to edge</li>
+        <li>Diameter (\(d\)): \(d = 2r\)</li>
+        <li>Circumference (perimeter): \( C = \pi d = 2\pi r \)</li>
+        <li>Area: \( A = \pi r^2 \)</li>
+      </ul>
+
+      <blockquote class="insight">
+        <p>Use \( \pi \approx 3.14 \) or \( \frac{22}{7} \) for estimation.</p>
+      </blockquote>
+
+      <p><strong>Example</strong>: Pizza with radius 8 inches</p>
+      \[
+      A = \pi \times 8^2 = 64\pi \approx 64 \times 3.14 = 200.96\ \text{in}^2
+      \]
+
+      <blockquote class="insight">
+        <p><strong>Practical Insight</strong>:<br />
+        A 16-inch pizza (diameter) has <strong>four times</strong> the area of an 8-inch pizza—not double!<br />
+        Because area depends on \(r^2\): \((8)^2 = 64\) vs. \((4)^2 = 16\) → 64/16 = 4.</p>
+      </blockquote>
+
+      <h4>Rectangular Prism (Box)</h4>
+      <ul>
+        <li>Volume: \( V = \text{length} \times \text{width} \times \text{height} \)</li>
+      </ul>
+
+      <p><strong>Example</strong>: Shipping box: 12 in × 8 in × 5 in</p>
+      \[
+      V = 12 \times 8 \times 5 = 480\ \text{in}^3
+      \]
+
+      <blockquote class="insight">
+        <p><strong>Real-world use</strong>:<br />
+        Moving companies charge by volume—knowing this helps you estimate costs.</p>
+      </blockquote>
+    </section>
+
+    <section>
+      <h3>7.3 Applying Ratios and Percents in Geometric Contexts</h3>
+
+      <p>Geometry isn’t just about absolute size—it’s about <strong>relationships</strong>.</p>
+
+      <h4>1. Scale Drawings and Maps</h4>
+      <p>A blueprint uses a <strong>scale ratio</strong>, like 1 in : 10 ft.</p>
+
+      <p><strong>Problem</strong>: On a map, 1 cm = 5 km. Two cities are 4.2 cm apart.</p>
+      <ul>
+        <li>Actual distance = \(4.2 \times 5 = 21\) km</li>
+      </ul>
+
+      <p>→ This is a <strong>proportional relationship</strong>—same as in Chapter 5.</p>
+
+      <h4>2. Percent Change in Area or Volume</h4>
+      <p>If you <strong>double the side</strong> of a square, what happens to its area?</p>
+      <ul>
+        <li>Original side = \(s\) → area = \(s^2\)</li>
+        <li>New side = \(2s\) → area = \((2s)^2 = 4s^2\)</li>
+      </ul>
+      <p>✅ Area becomes <strong>4 times larger</strong> → a <strong>300% increase</strong>.</p>
+
+      <p><strong>Similarly</strong>:</p>
+      <ul>
+        <li>Double all dimensions of a box → volume increases by \(2^3 = 8\) times (700% increase).</li>
+      </ul>
+
+      <blockquote class="insight">
+        <p><strong>Why it matters</strong>:<br />
+        A “20% larger” container might mean 20% taller—but if width and depth stay the same, volume only increases by 20%. Always check <strong>what</strong> is being scaled!</p>
+      </blockquote>
+
+      <h4>3. Percent of a Shape</h4>
+      <p>A circular garden has a 6 ft radius. A 90° sprinkler covers one-quarter of it. What percent is covered?</p>
+      <ul>
+        <li>Full circle = 360°</li>
+        <li>\( \frac{90}{360} = \frac{1}{4} = 25\% \)</li>
+      </ul>
+
+      <p>Or: If a triangle takes up 18 in² of a 60 in² poster,</p>
+      \[
+      \frac{18}{60} = 0.3 = 30\%
+      \]
+    </section>
+
+    <section>
+      <h3>Chapter Summary</h3>
+      <ul>
+        <li><strong>Perimeter</strong> = sum of sides; <strong>Area</strong> = surface (use formulas); <strong>Volume</strong> = 3D space</li>
+        <li>Key formulas rely on <strong>multiplication, fractions, and π</strong></li>
+        <li><strong>Circles</strong> grow with the <strong>square</strong> of the radius—bigger than they seem!</li>
+        <li><strong>Ratios</strong> govern scale drawings; <strong>percents</strong> describe parts of shapes or changes in size</li>
+      </ul>
+    </section>
+
+    <section>
+      <h3>Practice Problems</h3>
+      <ol>
+        <li>Find the perimeter and area of a rectangle 7.2 cm by 4.5 cm.</li>
+        <li>A triangle has base 15 m and height 8 m. What’s its area?</li>
+        <li>A circle has diameter 14 cm. Find its circumference and area (use \( \pi = \frac{22}{7} \)).</li>
+        <li>A cube has side length 6 in. What’s its volume?</li>
+        <li>On a scale drawing, 1 inch = 3 feet. A room is 4.5 inches long on the plan. How long is it in reality?</li>
+        <li>If you triple the radius of a circle, by what percent does the area increase?</li>
+        <li>A 12-inch pizza costs \$10. An 18-inch pizza costs \$18. Which is the better value per square inch?</li>
+      </ol>
+      <p><em>(Solutions with full reasoning will appear in the Arithmetic Unit Review.)</em></p>
+    </section>
+  </main>
+  <div data-include="footer.html"></div>
+</body>
+</html>

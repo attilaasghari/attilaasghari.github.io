@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Arithmetic Unit Review: Practice Problem Solutions</title>
+  <link rel="stylesheet" href="styles.css" />
+  <!-- MathJax Configuration -->
+  <script>
+
+  </script>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <script src="include.js" defer></script>
+</head>
+<body>
+  <main>
+    <h2>Arithmetic Unit Review: Practice Problem Solutions</h2>
+
+    <p>This page provides complete, step-by-step solutions to all practice problems from Chapters 1–7. Use it to check your work, understand your mistakes, and deepen your reasoning.</p>
+
+    <hr />
+
+    <!-- Chapter 1 -->
+    <section>
+      <h3>Chapter 1: The Language of Numbers</h3>
+      <ol>
+        <li>
+          <p><strong>Problem:</strong> List the first five integers greater than –3.</p>
+          <p><strong>Solution:</strong> Integers greater than –3 are: –2, –1, 0, 1, 2.</p>
+        </li>
+        <li>
+          <p><strong>Problem:</strong> Write 6,048 in expanded form.</p>
+          <p><strong>Solution:</strong>  
+          \[
+          6{,}048 = 6{,}000 + 0 + 40 + 8 = 6{,}000 + 40 + 8
+          \]</p>
+        </li>
+        <li>
+          <p><strong>Problem:</strong> Round 15,673 to the nearest thousand.</p>
+          <p><strong>Solution:</strong> The thousands digit is 5 (in 15,000). The digit to its right is 6 (≥5), so round up:  
+          \[
+          15{,}673 \approx 16{,}000
+          \]</p>
+        </li>
+        <li>
+          <p><strong>Problem:</strong> Estimate the total cost of items priced at \$19.95, \$4.50, and \$32.99.</p>
+          <p><strong>Solution:</strong> Round each:  
+          \$19.95 → \$20,  
+          \$4.50 → \$5,  
+          \$32.99 → \$33.  
+          Estimated total: \(20 + 5 + 33 = \$58\).</p>
+        </li>
+        <li>
+          <p><strong>Problem:</strong> Explain why 0 is not a natural number in this book’s convention.</p>
+          <p><strong>Solution:</strong> In modern mathematics—especially in computer science and number theory—natural numbers are defined as the counting numbers starting from 1. Zero is included in the whole numbers, but not the natural numbers, because counting typically begins at 1 (e.g., “1 apple, 2 apples…”).</p>
+        </li>
+      </ol>
+    </section>
+
+    <hr />
+
+    <!-- Chapter 2 -->
+    <section>
+      <h3>Chapter 2: Basic Operations</h3>
+      <ol>
+        <li>
+          <p><strong>Problem:</strong> Compute: \(15 - 6 + 4 \times 2\)</p>
+          <p><strong>Solution:</strong> Follow PEMDAS:  
+          Multiplication first: \(4 \times 2 = 8\)  
+          Then left to right: \(15 - 6 = 9\), then \(9 + 8 = 17\)  
+          ✅ Answer: **17**</p>
+        </li>
+        <li>
+          <p><strong>Problem:</strong> Use the distributive property to find \(8 \times 103\) mentally.</p>
+          <p><strong>Solution:</strong>  
+          \[
+          8 \times 103 = 8 \times (100 + 3) = 8 \times 100 + 8 \times 3 = 800 + 24 = 824
+          \]</p>
+        </li>
+        <li>
+          <p><strong>Problem:</strong> Explain why \((12 \div 4) \div 2 \ne 12 \div (4 \div 2)\).</p>
+          <p><strong>Solution:</strong> Division is **not associative**.  
+          Left side: \((12 \div 4) \div 2 = 3 \div 2 = 1.5\)  
+          Right side: \(12 \div (4 \div 2) = 12 \div 2 = 6\)  
+          Since \(1.5 \ne 6\), the expressions are not equal.</p>
+        </li>
+        <li>
+          <p><strong>Problem:</strong> Identify which property is shown: \(7 \times (3 + 5) = 7 \times 3 + 7 \times 5\)</p>
+          <p><strong>Solution:</strong> This is the **Distributive Property** of multiplication over addition.</p>
+        </li>
+        <li>
+          <p><strong>Problem:</strong> A pizza costs \$12. You and two friends split it evenly. How much does each pay? Write this as a division problem and solve.</p>
+          <p><strong>Solution:</strong> Total people = 3.  
+          Division problem: \(12 \div 3 = 4\)  
+          ✅ Each pays **\$4**.</p>
+        </li>
+      </ol>
+    </section>
+
+    <hr />
+
+    <!-- Chapter 3 -->
+    <section>
+      <h3>Chapter 3: Fractions and Mixed Numbers</h3>
+      <ol>
+        <li>
+          <p><strong>Problem:</strong> Simplify: \(\frac{24}{36}\)</p>
+          <p><strong>Solution:</strong> GCD of 24 and 36 is 12.  
+          \[
+          \frac{24 \div 12}{36 \div 12} = \frac{2}{3}
+          \]</p>
+        </li>
+        <li>
+          <p><strong>Problem:</strong> Add: \(\frac{5}{6} + \frac{3}{8}\)</p>
+          <p><strong>Solution:</strong> LCD of 6 and 8 is 24.  
+          \[
+          \frac{5}{6} = \frac{20}{24}, \quad \frac{3}{8} = \frac{9}{24}  
+          \Rightarrow \frac{20 + 9}{24} = \frac{29}{24} = 1\frac{5}{24}
+          \]</p>
+        </li>
+        <li>
+          <p><strong>Problem:</strong> Multiply: \(\frac{7}{9} \times \frac{3}{14}\) (use cancellation!)</p>
+          <p><strong>Solution:</strong> Cancel common factors:  
+          \[
+          \frac{\cancel{7}^1}{\cancel{9}^3} \times \frac{\cancel{3}^1}{\cancel{14}^2} = \frac{1 \cdot 1}{3 \cdot 2} = \frac{1}{6}
+          \]</p>
+        </li>
+        <li>
+          <p><strong>Problem:</strong> Divide: \(\frac{4}{5} \div \frac{2}{3}\)</p>
+          <p><strong>Solution:</strong> Keep, change, flip:  
+          \[
+          \frac{4}{5} \times \frac{3}{2} = \frac{12}{10} = \frac{6}{5} = 1\frac{1}{5}
+          \]</p>
+        </li>
+        <li>
+          <p><strong>Problem:</strong> Convert \(3\frac{5}{7}\) to an improper fraction.</p>
+          <p><strong>Solution:</strong>  
+          \[
+          (3 \times 7 + 5) / 7 = (21 + 5)/7 = \frac{26}{7}
+          \]</p>
+        </li>
+        <li>
+          <p><strong>Problem:</strong> Convert \(\frac{29}{6}\) to a mixed number.</p>
+          <p><strong>Solution:</strong>  
+          \(29 \div 6 = 4\) remainder 5 → \(4\frac{5}{6}\)</p>
+        </li>
+      </ol>
+    </section>
+
+    <hr />
+
+    <!-- Chapter 4 -->
+    <section>
+      <h3>Chapter 4: Decimals and Percents</h3>
+      <ol>
+        <li>
+          <p><strong>Problem:</strong> Write \( \frac{5}{8} \) as a decimal and a percent.</p>
+          <p><strong>Solution:</strong>  
+          \(5 \div 8 = 0.625\)  
+          \(0.625 \times 100 = 62.5\%\)  
+          ✅ Decimal: **0.625**, Percent: **62.5%**</p>
+        </li>
+        <li>
+          <p><strong>Problem:</strong> Add: \(12.07 + 3.456\)</p>
+          <p><strong>Solution:</strong> Align decimals:  
+          \[
+          \begin{array}{r}
+            12.070 \\
+          +\ 3.456 \\
+          \hline
+            15.526 \\
+          \end{array}
+          \]  
+          ✅ **15.526**</p>
+        </li>
+        <li>
+          <p><strong>Problem:</strong> Multiply: \(0.25 \times 0.8\)</p>
+          <p><strong>Solution:</strong>  
+          \(25 \times 8 = 200\); total decimal places = 2 + 1 = 3 → **0.200 = 0.2**</p>
+        </li>
+        <li>
+          <p><strong>Problem:</strong> Divide: \(7.2 \div 0.09\)</p>
+          <p><strong>Solution:</strong> Multiply numerator and denominator by 100:  
+          \(720 \div 9 = 80\)  
+          ✅ **80**</p>
+        </li>
+        <li>
+          <p><strong>Problem:</strong> What is 35% of 160?</p>
+          <p><strong>Solution:</strong>  
+          \(0.35 \times 160 = 56\)  
+          ✅ **56**</p>
+        </li>
+        <li>
+          <p><strong>Problem:</strong> A laptop costs \$900. It’s discounted by 15%, then taxed at 8%. What’s the final price?</p>
+          <p><strong>Solution:</strong>  
+          Discount: \(0.15 \times 900 = 135\) → Sale price = \(900 - 135 = 765\)  
+          Tax: \(0.08 \times 765 = 61.20\)  
+          Final price: \(765 + 61.20 = 826.20\)  
+          ✅ **\$826.20**</p>
+        </li>
+        <li>
+          <p><strong>Problem:</strong> Your score improved from 60 to 75. What percent increase is that?</p>
+          <p><strong>Solution:</strong>  
+          Increase = \(75 - 60 = 15\)  
+          Percent increase = \(\frac{15}{60} = 0.25 = 25\%\)  
+          ✅ **25% increase**</p>
+        </li>
+      </ol>
+    </section>
+
+    <hr />
+
+    <!-- Chapter 5 -->
+    <section>
+      <h3>Chapter 5: Ratios, Rates, and Proportions</h3>
+      <ol>
+        <li>
+          <p><strong>Problem:</strong> Write the ratio of 18 girls to 12 boys in simplest form.</p>
+          <p><strong>Solution:</strong>  
+          \(18 : 12 = \frac{18}{12} = \frac{3}{2}\) → **3 : 2**</p>
+        </li>
+        <li>
+          <p><strong>Problem:</strong> Which is the better buy: 12 oz for \$2.40 or 20 oz for \$3.80?</p>
+          <p><strong>Solution:</strong>  
+          Unit price 1: \(2.40 \div 12 = \$0.20/\text{oz}\)  
+          Unit price 2: \(3.80 \div 20 = \$0.19/\text{oz}\)  
+          ✅ **20 oz for \$3.80 is better** (lower unit price).</p>
+        </li>
+        <li>
+          <p><strong>Problem:</strong> Solve: \(\frac{5}{8} = \frac{x}{40}\)</p>
+          <p><strong>Solution:</strong> Cross-multiply:  
+          \(5 \cdot 40 = 8x \Rightarrow 200 = 8x \Rightarrow x = 25\)</p>
+        </li>
+        <li>
+          <p><strong>Problem:</strong> A printer prints 240 pages in 12 minutes. How many pages per minute?</p>
+          <p><strong>Solution:</strong>  
+          \(240 \div 12 = 20\)  
+          ✅ **20 pages per minute**</p>
+        </li>
+        <li>
+          <p><strong>Problem:</strong> On a map, 2 cm = 25 km. If two towns are 7 cm apart, how far are they in reality?</p>
+          <p><strong>Solution:</strong> Set up proportion:  
+          \[
+          \frac{2}{25} = \frac{7}{x} \Rightarrow 2x = 175 \Rightarrow x = 87.5
+          \]  
+          ✅ **87.5 km**</p>
+        </li>
+        <li>
+          <p><strong>Problem:</strong> A car travels 315 miles on 15 gallons of gas. How far can it go on 18 gallons?</p>
+          <p><strong>Solution:</strong> Unit rate: \(315 \div 15 = 21\) miles/gallon  
+          Distance: \(21 \times 18 = 378\) miles  
+          ✅ **378 miles**</p>
+        </li>
+        <li>
+          <p><strong>Problem:</strong> A recipe calls for ¾ cup of sugar for 9 muffins. How much for 36 muffins?</p>
+          <p><strong>Solution:</strong> 36 ÷ 9 = 4 → scale by 4  
+          \( \frac{3}{4} \times 4 = 3 \) cups  
+          ✅ **3 cups**</p>
+        </li>
+      </ol>
+    </section>
+
+    <hr />
+
+    <!-- Chapter 6 -->
+    <section>
+      <h3>Chapter 6: Applications in Daily Math</h3>
+      <ol>
+        <li>
+          <p><strong>Problem:</strong> You borrow \$800 at 4% simple interest for 3 years. How much interest will you pay?</p>
+          <p><strong>Solution:</strong>  
+          \(I = P r t = 800 \cdot 0.04 \cdot 3 = 96\)  
+          ✅ **\$96**</p>
+        </li>
+        <li>
+          <p><strong>Problem:</strong> Find the mean, median, mode, and range of: 6, 9, 3, 9, 12, 6, 9</p>
+          <p><strong>Solution:</strong> Ordered: 3, 6, 6, 9, 9, 9, 12  
+          - Mean: \((3+6+6+9+9+9+12)/7 = 54/7 \approx 7.71\)  
+          - Median: middle value = **9**  
+          - Mode: most frequent = **9**  
+          - Range: \(12 - 3 = 9\)</p>
+        </li>
+        <li>
+          <p><strong>Problem:</strong> Solve: \(-3x + 5 \geq 14\)</p>
+          <p><strong>Solution:</strong>  
+          \(-3x \geq 9\) → divide by –3 (flip sign): \(x \leq -3\)</p>
+        </li>
+        <li>
+          <p><strong>Problem:</strong> A phone plan costs \$40/month plus \$0.10 per text. You send 120 texts. Total bill?</p>
+          <p><strong>Solution:</strong>  
+          \(40 + (0.10 \times 120) = 40 + 12 = 52\)  
+          ✅ **\$52**</p>
+        </li>
+        <li>
+          <p><strong>Problem:</strong> You invest \$2,000 at 6% compounded annually. How much after 2 years?</p>
+          <p><strong>Solution:</strong>  
+          \(A = 2000(1 + 0.06)^2 = 2000(1.1236) = 2247.20\)  
+          ✅ **\$2,247.20**</p>
+        </li>
+        <li>
+          <p><strong>Problem:</strong> A student scored 85, 90, 78, and 92 on four tests. What score is needed on the fifth to have an average of 88?</p>
+          <p><strong>Solution:</strong> Let \(x\) = fifth score.  
+          \[
+          \frac{85 + 90 + 78 + 92 + x}{5} = 88 \Rightarrow \frac{345 + x}{5} = 88
+          \]  
+          \(345 + x = 440 \Rightarrow x = 95\)  
+          ✅ **95**</p>
+        </li>
+        <li>
+          <p><strong>Problem:</strong> “You must be at least 16 to get a driver’s permit.” Write this as an inequality.</p>
+          <p><strong>Solution:</strong> Let \(a\) = age.  
+          \(a \geq 16\)</p>
+        </li>
+      </ol>
+    </section>
+
+    <hr />
+
+    <!-- Chapter 7 -->
+    <section>
+      <h3>Chapter 7: Geometry in Arithmetic</h3>
+      <ol>
+        <li>
+          <p><strong>Problem:</strong> Find the perimeter and area of a rectangle 7.2 cm by 4.5 cm.</p>
+          <p><strong>Solution:</strong>  
+          Perimeter: \(2(7.2 + 4.5) = 2(11.7) = 23.4\) cm  
+          Area: \(7.2 \times 4.5 = 32.4\) cm²</p>
+        </li>
+        <li>
+          <p><strong>Problem:</strong> A triangle has base 15 m and height 8 m. What’s its area?</p>
+          <p><strong>Solution:</strong>  
+          \(A = \frac{1}{2} \times 15 \times 8 = 60\) m²</p>
+        </li>
+        <li>
+          <p><strong>Problem:</strong> A circle has diameter 14 cm. Find its circumference and area (use \( \pi = \frac{22}{7} \)).</p>
+          <p><strong>Solution:</strong> Radius \(r = 7\) cm  
+          Circumference: \(C = \pi d = \frac{22}{7} \times 14 = 44\) cm  
+          Area: \(A = \pi r^2 = \frac{22}{7} \times 49 = 154\) cm²</p>
+        </li>
+        <li>
+          <p><strong>Problem:</strong> A cube has side length 6 in. What’s its volume?</p>
+          <p><strong>Solution:</strong>  
+          \(V = 6 \times 6 \times 6 = 216\) in³</p>
+        </li>
+        <li>
+          <p><strong>Problem:</strong> On a scale drawing, 1 inch = 3 feet. A room is 4.5 inches long on the plan. How long is it in reality?</p>
+          <p><strong>Solution:</strong>  
+          \(4.5 \times 3 = 13.5\) feet</p>
+        </li>
+        <li>
+          <p><strong>Problem:</strong> If you triple the radius of a circle, by what percent does the area increase?</p>
+          <p><strong>Solution:</strong>  
+          Original area: \(\pi r^2\)  
+          New area: \(\pi (3r)^2 = 9\pi r^2\)  
+          Increase = \(9 - 1 = 8\) times → **800% increase**</p>
+        </li>
+        <li>
+          <p><strong>Problem:</strong> A 12-inch pizza costs \$10. An 18-inch pizza costs \$18. Which is the better value per square inch?</p>
+          <p><strong>Solution:</strong>  
+          - 12-inch: radius = 6 → area = \(\pi \cdot 36 \approx 113.04\) in² → cost per in² = \(10 / 113.04 \approx \$0.088\)  
+          - 18-inch: radius = 9 → area = \(\pi \cdot 81 \approx 254.34\) in² → cost per in² = \(18 / 254.34 \approx \$0.071\)  
+          ✅ **18-inch pizza is better value** (lower cost per square inch).</p>
+        </li>
+      </ol>
+    </section>
+
+    <hr />
+    <p><em>End of Arithmetic Unit Review. Great work! You’ve built a strong foundation for algebra and beyond.</em></p>
+  </main>
+  <div data-include="footer.html"></div>
+</body>
+</html>

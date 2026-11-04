@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chapter 1: The Language of Numbers</title>
+  <link rel="stylesheet" href="styles.css" />
+  <!-- MathJax for rendering LaTeX equations -->
+  <script>
+  </script>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <script src="include.js" defer></script>
+</head>
+<body>
+  <main>
+    <h2>1. Arithmetic</h2>
+
+    <section>
+      <h3>Chapter 1: The Language of Numbers</h3>
+
+      <blockquote>
+        <p>“Mathematics is not about numbers, equations, or algorithms: it is about understanding.”</p>
+        <cite>— William Paul Thurston</cite>
+      </blockquote>
+
+      <p>Before we solve equations, draw shapes, or model the motion of planets, we must first speak the language in which all of mathematics is written: <strong>numbers</strong>. This chapter introduces the basic vocabulary—what numbers are, how we write them, and how we use them to make sense of the world.</p>
+
+      <hr />
+
+      <section>
+        <h4>1.1 Introduction to Numbers: Natural, Whole, and Integers</h4>
+
+        <h5>Natural Numbers</h5>
+        <p>These are the counting numbers:</p>
+        \[
+        1,\ 2,\ 3,\ 4,\ 5,\ \dots
+        \]
+        <p>You use them when you count apples, steps, or days. They start at 1 and go on forever. (Note: Some older texts include 0 in natural numbers, but in modern usage—especially in computer science and number theory—we usually start at 1.)</p>
+
+        <h5>Whole Numbers</h5>
+        <p>Add zero to the natural numbers, and you get the <strong>whole numbers</strong>:</p>
+        \[
+        0,\ 1,\ 2,\ 3,\ 4,\ \dots
+        \]
+        <p>Zero represents “nothing,” but it’s a powerful idea—it lets us talk about empty sets, balances of zero dollars, or starting points on a number line.</p>
+
+        <h5>Integers</h5>
+        <p>Now imagine debt, temperature below zero, or floors below ground level in a building. To describe these, we need <strong>negative numbers</strong>. Combine positives, zero, and negatives, and you get the <strong>integers</strong>:</p>
+        \[
+        \dots,\ -3,\ -2,\ -1,\ 0,\ 1,\ 2,\ 3,\ \dots
+        \]
+        <p>Integers have no fractional or decimal parts. They are complete “steps” along the number line.</p>
+
+        <blockquote class="insight">
+          <p><strong>Practical Insight</strong>:<br />
+          When your bank account shows –$25, that’s an integer. When a thermometer reads –10°C, that’s also an integer. The number line isn’t just abstract—it’s your daily reality.</p>
+        </blockquote>
+      </section>
+
+      <section>
+        <h4>1.2 Place Value and Number Forms</h4>
+        <p>Numbers are written using a <strong>base-10 system</strong>. This means each digit’s value depends on its <strong>place</strong>.</p>
+
+        <p>Take the number <strong>3,427</strong>:</p>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Thousands</th>
+              <th>Hundreds</th>
+              <th>Tens</th>
+              <th>Ones</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>3</td>
+              <td>4</td>
+              <td>2</td>
+              <td>7</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <ul>
+          <li>The <strong>3</strong> means <strong>3 × 1,000 = 3,000</strong></li>
+          <li>The <strong>4</strong> means <strong>4 × 100 = 400</strong></li>
+          <li>The <strong>2</strong> means <strong>2 × 10 = 20</strong></li>
+          <li>The <strong>7</strong> means <strong>7 × 1 = 7</strong></li>
+        </ul>
+
+        <p>So,</p>
+        \[
+        3,427 = 3{,}000 + 400 + 20 + 7
+        \]
+
+        <p>This is called <strong>expanded form</strong>. It reveals the hidden structure of numbers.</p>
+
+        <p>We can also write numbers in:</p>
+        <ul>
+          <li><strong>Standard form</strong>: 3,427</li>
+          <li><strong>Word form</strong>: three thousand four hundred twenty-seven</li>
+          <li><strong>Expanded form</strong>: 3,000 + 400 + 20 + 7</li>
+        </ul>
+
+        <blockquote class="insight">
+          <p><strong>Why it matters</strong>:<br />
+          Place value is essential for addition, subtraction, and understanding large data (like national budgets or scientific measurements). Misreading a digit’s place can turn a million into a thousand!</p>
+        </blockquote>
+      </section>
+
+      <section>
+        <h4>1.3 Rounding and Estimation</h4>
+        <p>Exact numbers are great—but sometimes, <strong>close enough</strong> is smarter, faster, and more useful.</p>
+
+        <p><strong>Rounding</strong> means simplifying a number to a nearby “friendly” value.</p>
+
+        <p><strong>Rule of thumb</strong>:</p>
+        <ul>
+          <li>Look at the digit <strong>to the right</strong> of your target place.</li>
+          <li>If it’s <strong>5 or more</strong>, round <strong>up</strong>.</li>
+          <li>If it’s <strong>4 or less</strong>, keep the digit the same (<strong>round down</strong>).</li>
+        </ul>
+
+        <p><strong>Example</strong>: Round 4,872 to the nearest hundred.</p>
+        <ul>
+          <li>The hundreds digit is <strong>8</strong>.</li>
+          <li>The digit to its right is <strong>7</strong> (≥5), so round <strong>up</strong>:</li>
+        </ul>
+        \[
+        4,872 \approx 4,900
+        \]
+
+        <p><strong>Estimation</strong> uses rounding to make quick calculations.</p>
+
+        <blockquote class="insight">
+          <p><strong>Real-world use</strong>:<br />
+          You’re at the grocery store with $50. Your items cost $12.99, $8.49, and $27.95.<br />
+          Round: $13 + $8 + $28 = $49 → You’re under budget!<br />
+          No calculator needed.</p>
+        </blockquote>
+
+        <blockquote class="caution">
+          <p><strong>Caution</strong>: Estimation gives you a <em>ballpark</em>, not a blueprint. Use it for decisions, not precision engineering.</p>
+        </blockquote>
+      </section>
+
+      <section>
+        <h3>Chapter Summary</h3>
+        <ul>
+          <li><strong>Natural numbers</strong>: for counting (1, 2, 3, …)</li>
+          <li><strong>Whole numbers</strong>: natural + zero</li>
+          <li><strong>Integers</strong>: whole numbers + negatives</li>
+          <li><strong>Place value</strong> tells you what each digit <em>really</em> means</li>
+          <li><strong>Rounding and estimation</strong> help you think quickly and wisely</li>
+        </ul>
+      </section>
+
+      <section>
+        <h3>Practice Problems</h3>
+        <ol>
+          <li>List the first five integers greater than –3.</li>
+          <li>Write 6,048 in expanded form.</li>
+          <li>Round 15,673 to the nearest thousand.</li>
+          <li>Estimate the total cost of items priced at $19.95, $4.50, and $32.99.</li>
+          <li>Explain why 0 is not a natural number in this book’s convention.</li>
+        </ol>
+        <p><em>(Answers and step-by-step solutions will appear at the end of the Arithmetic unit.)</em></p>
+      </section>
+    </section>
+  </main>
+  <hr>
+
+  <div data-include="footer.html"></div>
+</body>
+</html>

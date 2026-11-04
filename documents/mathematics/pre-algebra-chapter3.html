@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chapter 3: Algebraic Fractions</title>
+  <link rel="stylesheet" href="styles.css" />
+  <!-- MathJax Configuration -->
+  <script>
+
+  </script>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <script src="include.js" defer></script>
+</head>
+<body>
+  <main>
+    <h2>Chapter 3: Algebraic Fractions</h2>
+
+    <blockquote>
+      <p>“An algebraic fraction is just a fraction wearing a variable disguise. Peel it back, and the same rules apply.”</p>
+      <cite>— Professor’s Notebook</cite>
+    </blockquote>
+
+    <p>You’ve simplified \(\frac{12}{18}\), added \(\frac{2}{3} + \frac{5}{6}\), and divided \(\frac{3}{4} \div \frac{1}{2}\). Now, we do the same—but with expressions like \(\frac{x}{2}\), \(\frac{3a}{a+1}\), or \(\frac{x^2 - 4}{x - 2}\). These appear everywhere: in rates, proportions, formulas, and later, in calculus.</p>
+
+    <p>This chapter teaches you to <strong>simplify, combine, and compute</strong> with algebraic fractions confidently—by recognizing structure, factoring, and applying familiar fraction rules.</p>
+
+    <hr />
+
+    <section>
+      <h3>3.1 Review of Fraction Operations (with Variables)</h3>
+
+      <p>The core rules <strong>do not change</strong>—only the ingredients.</p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Operation</th>
+            <th>Rule</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Multiplication</strong></td>
+            <td>\(\frac{a}{b} \cdot \frac{c}{d} = \frac{ac}{bd}\)</td>
+          </tr>
+          <tr>
+            <td><strong>Division</strong></td>
+            <td>\(\frac{a}{b} \div \frac{c}{d} = \frac{a}{b} \cdot \frac{d}{c}\)</td>
+          </tr>
+          <tr>
+            <td><strong>Addition/Subtraction</strong></td>
+            <td>Requires <strong>common denominator</strong>: \(\frac{a}{b} + \frac{c}{d} = \frac{ad + bc}{bd}\)</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <blockquote class="caution">
+        <p><strong>Critical reminder</strong>:<br />
+        You can only <strong>cancel</strong> factors that are <strong>multiplied</strong>, not added.<br />
+        ✅ \(\frac{3x}{6} = \frac{x}{2}\) (cancel 3)<br />
+        ❌ \(\frac{x + 3}{x + 6} \ne \frac{3}{6}\) — <strong>never cancel across addition!</strong></p>
+      </blockquote>
+    </section>
+
+    <section>
+      <h3>3.2 Simplifying Algebraic Fractions</h3>
+
+      <p>To simplify, <strong>factor numerator and denominator</strong>, then cancel <strong>common factors</strong>.</p>
+
+      <h4>Step-by-Step Process</h4>
+      <ol>
+        <li>Factor everything completely.</li>
+        <li>Cancel any common <strong>factors</strong> (not terms!).</li>
+        <li>State any <strong>restrictions</strong> (values that make denominator zero).</li>
+      </ol>
+
+      <p><strong>Example 1</strong>: Simplify \(\frac{6x^2}{9x}\)</p>
+      <ul>
+        <li>Factor: \(\frac{2 \cdot 3 \cdot x \cdot x}{3 \cdot 3 \cdot x}\)</li>
+        <li>Cancel common factors (3 and one \(x\)): \(\frac{2x}{3}\)</li>
+        <li>Restriction: \(x \ne 0\) (since original denominator = 0 when \(x = 0\))</li>
+      </ul>
+
+      <p><strong>Example 2</strong>: Simplify \(\frac{x^2 - 9}{x + 3}\)</p>
+      <ul>
+        <li>Numerator is a <strong>difference of squares</strong>: \(x^2 - 9 = (x - 3)(x + 3)\)</li>
+        <li>So: \(\frac{(x - 3)(x + 3)}{x + 3}\)</li>
+        <li>Cancel \((x + 3)\): <strong>Result = \(x - 3\)</strong></li>
+        <li>Restriction: \(x \ne -3\)</li>
+      </ul>
+
+      <blockquote class="insight">
+        <p><strong>Why restrictions matter</strong>:<br />
+        The original expression is <strong>undefined</strong> at \(x = -3\), even though the simplified form \(x - 3\) is defined there. They are <strong>equal only where both exist</strong>.</p>
+      </blockquote>
+
+      <p><strong>Example 3</strong>: Simplify \(\frac{2x + 4}{x^2 + 3x + 2}\)</p>
+      <ul>
+        <li>Factor numerator: \(2(x + 2)\)</li>
+        <li>Factor denominator: \((x + 1)(x + 2)\)</li>
+        <li>Cancel \((x + 2)\): \(\frac{2}{x + 1}\)</li>
+        <li>Restrictions: \(x \ne -1,\ -2\)</li>
+      </ul>
+    </section>
+
+    <section>
+      <h3>3.3 Finding Common Denominators</h3>
+
+      <p>To add or subtract algebraic fractions, you need a <strong>common denominator</strong>—preferably the <strong>Least Common Denominator (LCD)</strong>.</p>
+
+      <h4>How to Find the LCD</h4>
+      <ol>
+        <li>Factor all denominators completely.</li>
+        <li>Take the <strong>highest power</strong> of each distinct factor.</li>
+      </ol>
+
+      <p><strong>Example</strong>:</p>
+      \[
+      \frac{3}{x(x + 2)} \quad \text{and} \quad \frac{5}{(x + 2)^2}
+      \]
+      <ul>
+        <li>Factors: \(x,\ (x + 2),\ (x + 2)^2\)</li>
+        <li>LCD = \(x(x + 2)^2\)</li>
+      </ul>
+
+      <blockquote class="insight">
+        <p><strong>Tip</strong>:<br />
+        If denominators share no common factors, LCD = product of denominators.</p>
+      </blockquote>
+    </section>
+
+    <section>
+      <h3>3.4 Operations with Algebraic Fractions</h3>
+
+      <h4>Addition &amp; Subtraction</h4>
+
+      <p><strong>Example</strong>:</p>
+      \[
+      \frac{2}{x} + \frac{3}{x + 1}
+      \]
+      <ol>
+        <li>LCD = \(x(x + 1)\)</li>
+        <li>Rewrite each fraction:<br />
+          \[
+          \frac{2(x + 1)}{x(x + 1)} + \frac{3x}{x(x + 1)} = \frac{2x + 2 + 3x}{x(x + 1)} = \frac{5x + 2}{x(x + 1)}
+          \]</li>
+      </ol>
+
+      <p><strong>Example (with factoring)</strong>:</p>
+      \[
+      \frac{1}{x - 2} - \frac{1}{x^2 - 4}
+      \]
+      <ul>
+        <li>Note: \(x^2 - 4 = (x - 2)(x + 2)\)</li>
+        <li>LCD = \((x - 2)(x + 2)\)</li>
+        <li>Rewrite:<br />
+          \[
+          \frac{(x + 2)}{(x - 2)(x + 2)} - \frac{1}{(x - 2)(x + 2)} = \frac{x + 2 - 1}{(x - 2)(x + 2)} = \frac{x + 1}{(x - 2)(x + 2)}
+          \]</li>
+      </ul>
+
+      <h4>Multiplication</h4>
+
+      <p><strong>Example</strong>:</p>
+      \[
+      \frac{x + 3}{2x} \cdot \frac{4x^2}{x^2 - 9}
+      \]
+      <ol>
+        <li>Factor: \(x^2 - 9 = (x - 3)(x + 3)\)</li>
+        <li>Write all factors:<br />
+          \[
+          \frac{(x + 3)}{2x} \cdot \frac{4x^2}{(x - 3)(x + 3)}
+          \]</li>
+        <li>Cancel:
+          <ul>
+            <li>\((x + 3)\) cancels</li>
+            <li>\(x\) cancels one \(x\) in \(x^2\)</li>
+            <li>4 and 2 → 2 remains</li>
+          </ul>
+        </li>
+        <li>Result: \(\frac{2x}{x - 3}\)</li>
+        <li>Restrictions: \(x \ne 0,\ 3,\ -3\)</li>
+      </ol>
+
+      <h4>Division</h4>
+
+      <p><strong>Example</strong>:</p>
+      \[
+      \frac{x^2 - 1}{x + 2} \div \frac{x - 1}{3x}
+      \]
+      <ol>
+        <li>“Keep, Change, Flip”:<br />
+          \[
+          \frac{x^2 - 1}{x + 2} \cdot \frac{3x}{x - 1}
+          \]</li>
+        <li>Factor: \(x^2 - 1 = (x - 1)(x + 1)\)</li>
+        <li>Cancel \((x - 1)\):<br />
+          \[
+          \frac{(x + 1)}{x + 2} \cdot 3x = \frac{3x(x + 1)}{x + 2}
+          \]</li>
+        <li>Restrictions: \(x \ne -2,\ 1,\ 0\)</li>
+      </ol>
+    </section>
+
+    <section>
+      <h3>Chapter Summary</h3>
+      <ul>
+        <li><strong>Algebraic fractions</strong> follow the same rules as numerical fractions—but require <strong>factoring</strong>.</li>
+        <li><strong>Simplify</strong> by factoring and canceling <strong>common factors</strong> (never terms!).</li>
+        <li><strong>LCD</strong> is built from the highest powers of all denominator factors.</li>
+        <li><strong>Always state restrictions</strong>: values that make any original denominator zero.</li>
+        <li><strong>Operations</strong>:
+          <ul>
+            <li>Multiply/Divide: factor, cancel, simplify</li>
+            <li>Add/Subtract: find LCD, rewrite, combine numerators</li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h3>Practice Problems</h3>
+      <ol>
+        <li>Simplify: \(\frac{8x^3}{12x^2}\)</li>
+        <li>Simplify: \(\frac{x^2 - 5x + 6}{x - 2}\)</li>
+        <li>Add: \(\frac{3}{x} + \frac{2}{x + 1}\)</li>
+        <li>Subtract: \(\frac{5}{x - 1} - \frac{2}{x^2 - 1}\)</li>
+        <li>Multiply: \(\frac{x + 4}{x^2 - 16} \cdot \frac{2x}{x + 4}\)</li>
+        <li>Divide: \(\frac{x^2 - 9}{x} \div \frac{x + 3}{2x^2}\)</li>
+        <li>State all restrictions for problem #6.</li>
+      </ol>
+      <p><em>(Solutions with full factoring steps and restrictions will appear at the end of the Pre-Algebra unit.)</em></p>
+    </section>
+  </main>
+  <div data-include="footer.html"></div>
+</body>
+</html>

@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chapter 1: Extending the Number Line</title>
+  <link rel="stylesheet" href="styles.css" />
+  <!-- MathJax Configuration -->
+  <script>
+  </script>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <script src="include.js" defer></script>
+</head>
+<body>
+  <main>
+    <h2>Chapter 1: Extending the Number Line</h2>
+
+    <blockquote>
+      <p>“The introduction of negative numbers is one of the most profound ideas in elementary mathematics—because it expands reality, not just notation.”</p>
+      <cite>— Professor’s Reflection</cite>
+    </blockquote>
+
+    <p>So far, you’ve worked with numbers that count, measure, and compare. But the real world includes <strong>losses</strong>, <strong>depths</strong>, <strong>debts</strong>, and <strong>directions</strong>—concepts that require numbers <em>less than zero</em>. In this chapter, we formally extend the number line into the negative, define key properties, and master operations with negative numbers—including fractions.</p>
+
+    <hr />
+
+    <section>
+      <h3>1.1 Review of Integers and Opposites</h3>
+
+      <p>The <strong>integers</strong> are:</p>
+      \[
+      \dots, -4, -3, -2, -1, 0, 1, 2, 3, 4, \dots
+      \]
+
+      <ul>
+        <li><strong>Positive integers</strong>: to the right of 0</li>
+        <li><strong>Negative integers</strong>: to the left of 0</li>
+        <li><strong>Zero</strong>: neither positive nor negative; the origin</li>
+      </ul>
+
+      <h4>Opposites</h4>
+      <p>Every number has an <strong>opposite</strong>—the same distance from 0, but on the other side.</p>
+      <ul>
+        <li>Opposite of \(5\) is \(-5\)</li>
+        <li>Opposite of \(-3\) is \(3\)</li>
+        <li>Opposite of \(0\) is \(0\)</li>
+      </ul>
+
+      <p>We write the opposite of \(a\) as \(-a\).<br />
+      So: \(-(-4) = 4\)</p>
+
+      <blockquote class="insight">
+        <p><strong>Real-world analogy</strong>:<br />
+        If +50 ft means 50 feet above sea level, then –50 ft means 50 feet <strong>below</strong>. They are opposites in elevation—but equal in magnitude.</p>
+      </blockquote>
+    </section>
+
+    <section>
+      <h3>1.2 Negative Numbers and Absolute Value</h3>
+
+      <h4>Negative Numbers in Context</h4>
+      <ul>
+        <li><strong>Finance</strong>: –$200 = $200 of debt</li>
+        <li><strong>Temperature</strong>: –10°C = 10 degrees below freezing</li>
+        <li><strong>Elevation</strong>: –282 ft = 282 feet below sea level (Death Valley)</li>
+        <li><strong>Direction</strong>: –5 miles = 5 miles west (if east is positive)</li>
+      </ul>
+
+      <h4>Absolute Value: Distance from Zero</h4>
+      <p>The <strong>absolute value</strong> of a number is its <strong>distance from 0</strong> on the number line—always <strong>non-negative</strong>.</p>
+      <p><strong>Notation</strong>: \( |x| \)</p>
+
+      <p><strong>Examples</strong>:</p>
+      <ul>
+        <li>\( |7| = 7 \)</li>
+        <li>\( |-7| = 7 \)</li>
+        <li>\( |0| = 0 \)</li>
+      </ul>
+
+      <blockquote class="insight">
+        <p><strong>Key idea</strong>: Absolute value strips away <strong>sign</strong>, keeping only <strong>size</strong>.</p>
+      </blockquote>
+
+      <p><strong>Practical use</strong>:</p>
+      <ul>
+        <li>“The temperature changed by 12 degrees” → \( |\text{final} - \text{initial}| = 12 \), regardless of warming or cooling.</li>
+        <li>Error tolerance: “Acceptable length is 10 cm ± 0.5 cm” → \( |x - 10| \leq 0.5 \)</li>
+      </ul>
+    </section>
+
+    <section>
+      <h3>1.3 Adding, Subtracting, Multiplying, and Dividing Negatives</h3>
+
+      <p>Let’s master the rules—<strong>with reasoning</strong>, not just memorization.</p>
+
+      <h4>Addition</h4>
+      <ul>
+        <li><strong>Same signs</strong>: Add magnitudes, keep sign<br />
+          \[
+          (-4) + (-6) = -10 \quad ; \quad 3 + 7 = 10
+          \]</li>
+        <li><strong>Different signs</strong>: Subtract magnitudes, keep sign of the <strong>larger absolute value</strong><br />
+          \[
+          (-8) + 5 = -3 \quad ; \quad (-2) + 9 = 7
+          \]</li>
+      </ul>
+
+      <blockquote class="insight">
+        <p><strong>Number line view</strong>:<br />
+        Start at the first number, then move <strong>right</strong> for positive, <strong>left</strong> for negative.</p>
+      </blockquote>
+
+      <h4>Subtraction</h4>
+      <p><strong>Subtracting a number = Adding its opposite</strong></p>
+      \[
+      a - b = a + (-b)
+      \]
+
+      <p><strong>Examples</strong>:</p>
+      <ul>
+        <li>\( 5 - 8 = 5 + (-8) = -3 \)</li>
+        <li>\( -4 - (-7) = -4 + 7 = 3 \)</li>
+        <li>\( -6 - 2 = -6 + (-2) = -8 \)</li>
+      </ul>
+
+      <blockquote class="insight">
+        <p><strong>Mnemonic</strong>: “<strong>Keep, Change, Change</strong>”<br />
+        Keep the first number, change subtraction to addition, change the sign of the second number.</p>
+      </blockquote>
+
+      <h4>Multiplication &amp; Division</h4>
+      <ul>
+        <li><strong>Same signs</strong> → <strong>positive</strong> result<br />
+          \[
+          (-3) \times (-4) = 12 \quad ; \quad (-15) \div (-3) = 5
+          \]</li>
+        <li><strong>Different signs</strong> → <strong>negative</strong> result<br />
+          \[
+          6 \times (-2) = -12 \quad ; \quad (-20) \div 4 = -5
+          \]</li>
+      </ul>
+
+      <blockquote class="insight">
+        <p><strong>Why does negative × negative = positive?</strong><br />
+        Think of it as <strong>reversing a reversal</strong>.<br />
+        Example: “I <em>don’t</em> <strong>not</strong> like it” = I <em>do</em> like it.<br />
+        Or mathematically:<br />
+        \[
+        (-1) \times (-1) = 1 \quad \text{to preserve the distributive property}
+        \]</p>
+      </blockquote>
+
+      <blockquote class="caution">
+        <p><strong>Caution</strong>:<br />
+        \(-3^2\) means \(-(3^2) = -9\), but \((-3)^2 = 9\). Parentheses matter!</p>
+      </blockquote>
+    </section>
+
+    <section>
+      <h3>1.4 Negative Fractions and Mixed Numbers</h3>
+
+      <p>Fractions can be negative too! The negative sign can appear in <strong>three places</strong>—all equivalent:</p>
+      \[
+      -\frac{3}{4} = \frac{-3}{4} = \frac{3}{-4}
+      \]
+
+      <p>But <strong>never</strong> in the denominator alone in final answers—convention places the sign in front or on the numerator.</p>
+
+      <h4>Operations with Negative Fractions</h4>
+      <p>All rules from Section 1.3 apply.</p>
+
+      <p><strong>Example 1 (Addition)</strong>:</p>
+      \[
+      -\frac{1}{2} + \frac{3}{4} = \frac{-2}{4} + \frac{3}{4} = \frac{1}{4}
+      \]
+
+      <p><strong>Example 2 (Multiplication)</strong>:</p>
+      \[
+      -\frac{2}{5} \times \frac{7}{3} = -\frac{14}{15}
+      \]
+
+      <p><strong>Example 3 (Division)</strong>:</p>
+      \[
+      -\frac{3}{8} \div \left(-\frac{1}{4}\right) = -\frac{3}{8} \times \left(-\frac{4}{1}\right) = \frac{12}{8} = \frac{3}{2} = 1\frac{1}{2}
+      \]
+
+      <h4>Negative Mixed Numbers</h4>
+      <p>Write as improper fractions <strong>before</strong> operating.</p>
+      \[
+      -2\frac{1}{3} = -\left(2 + \frac{1}{3}\right) = -\frac{7}{3}
+      \]
+
+      <blockquote class="caution">
+        <p><strong>Important</strong>:<br />
+        \(-2\frac{1}{3}\) means <strong>negative of</strong> \(2\frac{1}{3}\)—not \(-2 + \frac{1}{3}\).<br />
+        Always treat the whole mixed number as a single quantity.</p>
+      </blockquote>
+    </section>
+
+    <section>
+      <h3>Chapter Summary</h3>
+      <ul>
+        <li>The <strong>number line extends infinitely in both directions</strong>—negative numbers model real-world opposites.</li>
+        <li><strong>Absolute value</strong> measures distance from zero, ignoring direction.</li>
+        <li><strong>Operations with negatives</strong>:
+          <ul>
+            <li>Addition/Subtraction: Use opposites and number line logic</li>
+            <li>Multiplication/Division: Same signs → positive; different → negative</li>
+          </ul>
+        </li>
+        <li><strong>Negative fractions</strong> follow the same rules—just track the sign carefully.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h3>Practice Problems</h3>
+      <ol>
+        <li>Find \( | -12 | \) and \( -| 12 | \). Are they equal?</li>
+        <li>Compute: \( (-7) + 4 \), \( 5 - (-9) \), \( (-6) - 3 \)</li>
+        <li>Multiply: \( (-4)(-8) \), \( 7 \times (-3) \), \( (-2.5)(4) \)</li>
+        <li>Divide: \( (-36) \div (-6) \), \( 21 \div (-7) \)</li>
+        <li>Simplify: \( -\frac{5}{6} + \frac{2}{3} \)</li>
+        <li>Evaluate: \( (-2\frac{1}{4}) \times \frac{2}{3} \)</li>
+        <li>Explain in words: Why is \( (-10) \div (-2) = 5 \)?</li>
+      </ol>
+      <p><em>(Solutions with explanations will appear at the end of the Pre-Algebra unit.)</em></p>
+    </section>
+  </main>
+  <div data-include="footer.html"></div>
+</body>
+</html>

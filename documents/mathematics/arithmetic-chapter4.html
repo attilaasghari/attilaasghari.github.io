@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chapter 4: Decimals and Percents</title>
+  <link rel="stylesheet" href="styles.css" />
+  <!-- MathJax Configuration -->
+  <script>
+
+  </script>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <script src="include.js" defer></script>
+</head>
+<body>
+  <main>
+    <h2>Chapter 4: Decimals and Percents</h2>
+
+    <blockquote>
+      <p>“Decimals are fractions in disguise. Percents are decimals wearing a hat labeled ‘per hundred.’”</p>
+      <cite>— Professor’s Notebook</cite>
+    </blockquote>
+
+    <p>From checking your bank balance to comparing phone battery levels, from calculating a 20% tip to understanding inflation rates—you’re constantly working with <strong>decimals</strong> and <strong>percents</strong>. This chapter equips you with the tools to move fluently between fractions, decimals, and percents—and to solve real-life problems with confidence.</p>
+
+    <hr />
+
+    <section>
+      <h3>4.1 Decimal Representation and Place Value</h3>
+
+      <p>A <strong>decimal</strong> is a way to write fractions whose denominators are powers of 10 (10, 100, 1000, etc.).</p>
+
+      <p>The <strong>decimal point</strong> separates the whole number part from the fractional part.</p>
+
+      <p><strong>Example</strong>:</p>
+      \[
+      23.407
+      \]
+
+      <table>
+        <thead>
+          <tr>
+            <th>Tens</th>
+            <th>Ones</th>
+            <th>.</th>
+            <th>Tenths</th>
+            <th>Hundredths</th>
+            <th>Thousandths</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>2</td>
+            <td>3</td>
+            <td>.</td>
+            <td>4</td>
+            <td>0</td>
+            <td>7</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p>So:</p>
+      \[
+      23.407 = 20 + 3 + \frac{4}{10} + \frac{0}{100} + \frac{7}{1000}
+      \]
+
+      <blockquote class="insight">
+        <p><strong>Key Insight</strong>:<br />
+        Each place to the right of the decimal is <strong>10 times smaller</strong> than the one before it.</p>
+      </blockquote>
+
+      <p><strong>Zeros matter—but not always</strong>:</p>
+      <ul>
+        <li>\(0.5 = 0.50 = 0.500\) → trailing zeros after the decimal don’t change value.</li>
+        <li>But \(0.05 \ne 0.5\) → zeros <em>between</em> the decimal and digits <strong>do</strong> change value!</li>
+      </ul>
+    </section>
+
+    <section>
+      <h3>4.2 Converting Between Fractions, Decimals, and Percents</h3>
+
+      <p>These three forms are <strong>equivalent representations</strong> of the same number. Mastering conversion is essential for comparison and computation.</p>
+
+      <h4>Fraction → Decimal</h4>
+      <p>Divide numerator by denominator.</p>
+      \[
+      \frac{3}{4} = 3 \div 4 = 0.75
+      \]
+      \[
+      \frac{1}{3} = 0.\overline{3} \quad \text{(repeating decimal)}
+      \]
+
+      <blockquote class="insight">
+        <p><strong>Tip</strong>: Use long division or a calculator—but understand what the digits mean.</p>
+      </blockquote>
+
+      <h4>Decimal → Fraction</h4>
+      <p>Write the decimal as a fraction over its place value, then simplify.</p>
+      \[
+      0.6 = \frac{6}{10} = \frac{3}{5}
+      \]
+      \[
+      0.125 = \frac{125}{1000} = \frac{1}{8}
+      \]
+
+      <h4>Decimal → Percent</h4>
+      <p>Multiply by 100 and add the % symbol.</p>
+      \[
+      0.45 = 45\% \quad ; \quad 1.2 = 120\% \quad ; \quad 0.007 = 0.7\%
+      \]
+
+      <h4>Percent → Decimal</h4>
+      <p>Divide by 100 (or move decimal point two places left).</p>
+      \[
+      82\% = 0.82 \quad ; \quad 5\% = 0.05 \quad ; \quad 150\% = 1.5
+      \]
+
+      <h4>Fraction ↔ Percent</h4>
+      <p>Go through decimal as an intermediate step, or scale denominator to 100 if possible.</p>
+      \[
+      \frac{7}{20} = \frac{35}{100} = 35\%
+      \]
+      \[
+      \frac{2}{3} \approx 0.666... \approx 66.7\%
+      \]
+
+      <blockquote class="insight">
+        <p><strong>Practical Insight</strong>:<br />
+        In polls, finance, and science, percents make comparisons intuitive:<br />
+        “40% of students” is clearer than “2/5 of students” in many contexts.</p>
+      </blockquote>
+    </section>
+
+    <section>
+      <h3>4.3 Operations with Decimals</h3>
+
+      <p>The rules mirror whole-number arithmetic—but <strong>alignment matters</strong>.</p>
+
+      <h4>Addition &amp; Subtraction</h4>
+      <p>→ <strong>Line up the decimal points</strong>.</p>
+
+      <p><strong>Example</strong>:</p>
+      \[
+      12.3 + 4.567 = ?
+      \]
+
+      <p>Write as:</p>
+      <pre>
+  12.300
++  4.567
+--------
+  16.867
+      </pre>
+
+      <blockquote class="insight">
+        <p><strong>Why?</strong> You’re adding tenths to tenths, hundredths to hundredths—just like aligning place values in whole numbers.</p>
+      </blockquote>
+
+      <h4>Multiplication</h4>
+      <p>→ <strong>Ignore decimals at first</strong>, multiply as whole numbers, then <strong>count total decimal places</strong>.</p>
+
+      <p><strong>Example</strong>:</p>
+      \[
+      0.6 \times 0.04 = ?
+      \]
+      <ul>
+        <li>\(6 \times 4 = 24\)</li>
+        <li>Total decimal places: 1 (from 0.6) + 2 (from 0.04) = 3</li>
+        <li>So: \(0.6 \times 0.04 = 0.024\)</li>
+      </ul>
+
+      <blockquote class="insight">
+        <p><strong>Real-world use</strong>:<br />
+        Cost of 2.5 pounds of apples at $1.20 per pound:<br />
+        \(2.5 \times 1.20 = 3.00\) → $3.00</p>
+      </blockquote>
+
+      <h4>Division</h4>
+      <p>→ <strong>Move the decimal point</strong> in both divisor and dividend to make the divisor a whole number.</p>
+
+      <p><strong>Example</strong>:</p>
+      \[
+      4.8 \div 0.6 = ?
+      \]
+      <ul>
+        <li>Multiply numerator and denominator by 10:<br />
+          \(48 \div 6 = 8\)</li>
+      </ul>
+
+      <blockquote class="insight">
+        <p><strong>Check</strong>: \(0.6 \times 8 = 4.8\) → correct.</p>
+      </blockquote>
+    </section>
+
+    <section>
+      <h3>4.4 Solving Percent Problems</h3>
+
+      <p>Most percent problems fit one of three forms:</p>
+
+      <blockquote>
+        <p><strong>“What is X% of Y?”</strong><br />
+        <strong>“X is what percent of Y?”</strong><br />
+        <strong>“X is Y% of what number?”</strong></p>
+      </blockquote>
+
+      <p>Use the <strong>percent equation</strong>:</p>
+      \[
+      \text{Part} = \text{Percent} \times \text{Whole}
+      \]
+      <p>(where <strong>Percent</strong> is in <strong>decimal form</strong>)</p>
+
+      <h4>1. Finding a Percent of a Number</h4>
+      <p>> “What is 18% of 250?”</p>
+      \[
+      0.18 \times 250 = 45
+      \]
+      <p>✅ Answer: <strong>45</strong></p>
+
+      <h4>2. Percent Increase or Decrease</h4>
+      <p>> “A $80 shirt is on sale for 25% off. What’s the sale price?”</p>
+      <ul>
+        <li>Discount: \(0.25 \times 80 = 20\)</li>
+        <li>Sale price: \(80 - 20 = 60\)</li>
+      </ul>
+      <p>Or faster: Pay <strong>75%</strong> of original → \(0.75 \times 80 = 60\)</p>
+
+      <h4>3. Finding the Original Amount</h4>
+      <p>> “After a 10% raise, your salary is $55,000. What was it before?”</p>
+      <p>Let original = \(x\)</p>
+      \[
+      x + 0.10x = 1.10x = 55{,}000
+      \]
+      \[
+      x = \frac{55{,}000}{1.10} = 50{,}000
+      \]
+      <p>✅ Original salary: <strong>$50,000</strong></p>
+
+      <h4>4. Tax, Tip, and Markup</h4>
+      <p>Same as percent increase:</p>
+      <ul>
+        <li><strong>Tax</strong>: \( \text{Total} = \text{Price} \times (1 + \text{tax rate}) \)</li>
+        <li><strong>Tip</strong>: \( \text{Total} = \text{Bill} \times (1 + \text{tip rate}) \)</li>
+      </ul>
+
+      <blockquote class="caution">
+        <p><strong>Life skill</strong>:<br />
+        Always ask: <em>Is this percent applied to the original or the new amount?</em><br />
+        (e.g., “20% off, then 10% off” ≠ “30% off”!)</p>
+      </blockquote>
+    </section>
+
+    <section>
+      <h3>Chapter Summary</h3>
+      <ul>
+        <li><strong>Decimals</strong> extend place value to the right of the decimal point.</li>
+        <li><strong>Fractions ↔ Decimals ↔ Percents</strong>: Convert using division, place value, or scaling to 100.</li>
+        <li><strong>Decimal operations</strong>:
+          <ul>
+            <li>Align points (add/sub)</li>
+            <li>Count places (multiply)</li>
+            <li>Shift decimals (divide)</li>
+          </ul>
+        </li>
+        <li><strong>Percent problems</strong>: Use the equation <strong>Part = Percent × Whole</strong>, and watch for increase/decrease contexts.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h3>Practice Problems</h3>
+      <ol>
+        <li>Write \( \frac{5}{8} \) as a decimal and a percent.</li>
+        <li>Add: \( 12.07 + 3.456 \)</li>
+        <li>Multiply: \( 0.25 \times 0.8 \)</li>
+        <li>Divide: \( 7.2 \div 0.09 \)</li>
+        <li>What is 35% of 160?</li>
+        <li>A laptop costs $900. It’s discounted by 15%, then taxed at 8%. What’s the final price?</li>
+        <li>Your score improved from 60 to 75. What percent increase is that?</li>
+      </ol>
+      <p><em>(Solutions with step-by-step reasoning will be provided at the end of the Arithmetic unit.)</em></p>
+    </section>
+  </main>
+  <div data-include="footer.html"></div>
+</body>
+</html>
